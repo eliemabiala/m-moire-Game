@@ -1,0 +1,192 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+form * {
+  font-family: "Poppins" sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  outline: none;
+  border: none;
+}
+
+.startGame {
+  background-color: rgba(255, 255, 255, 0.13);
+  height: 500px;
+  width: 400px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 35px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  border-radius: 10px;
+}
+
+.startGame h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes background-move {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 100vw 0, 0 0;
+    background-position: max(100vw, 40em) 0, 0 0;
+  }
+}
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 20em;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  margin-top: 20px;
+}
+@supports (mix-blend-mode: darken) {
+  .input-group {
+    position: relative;
+    mix-blend-mode: lighten;
+  }
+  .input-group__label {
+    position: absolute;
+    left: 3em;
+    top: -0.28em;
+    background: #000;
+  }
+}
+.input-group__label {
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  letter-spacing: 0.1em;
+  color: #ccd;
+  color: rgba(255, 220, 255, 0.6);
+  cursor: pointer;
+}
+.input-group__input {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-style: none;
+  outline: none;
+  height: 3.1em;
+  width: 100%;
+  padding: 0.8em 1em;
+  border: 0.25em solid transparent;
+  background-image: linear-gradient(#000, #000), linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 1.8em;
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-out;
+}
+.input-group__input:hover {
+  background-position: 100% 0;
+}
+.input-group__input:focus {
+  outline: 2px dashed #ad2b89;
+  outline-offset: 0.5em;
+}
+.input-group .input-group__label {
+  position: absolute;
+  top: -41%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+::-moz-placeholder {
+  color: rgb(216, 219, 221);
+}
+
+::placeholder {
+  color: rgb(216, 219, 221);
+}
+
+.play {
+  margin-top: 50px;
+  width: 100%;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.play:hover {
+  background: linear-gradient(to right, #2f649c, #c7911e);
+}
+
+.bg {
+  width: 430px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#204bb8, #7eb0e5);
+  left: -80px;
+  bottom: -100px;
+  filter: blur(5px);
+}
+
+.shape:last-child {
+  background: linear-gradient(#d08b31, #af7113);
+  right: -90px;
+  top: -100px;
+  filter: blur(5px);
+}
+
+.nav-link {
+  color: white;
+  font-size: 22px;
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Politique {
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(131, 38, 97);
+  border-radius: 20px;
+  font-size: 50px;
+}/*# sourceMappingURL=startGame.css.map */

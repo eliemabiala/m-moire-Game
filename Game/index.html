@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <div class="conteiner">
+
+      <div class="blob"></div>
+      <div class="blob1"></div>
+      <div class="blob2"></div>
+      <div class="blob3"></div>
+      <div class="blob4"></div>
+      <div class="blob5"></div>
+      
+      
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <div class="bubble"></div>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+
+    <div class="error">
+      <p>error <span id="error">0</span></p>
+    </div>
+
+
+    <div class="timer">
+      <p>TIMER</p>
+      <div class="display"> <span id="minu">00</span><span>:</span><span id="cronometro">00</span></div>
+  </div>
+
+    <div class="button">
+      <button id="reset" class="inter-button"> reset all</button>
+      <button id="resetAll" class="inter-button">To refresh</button>
+      <button id="login"    class="inter-button">login</button>
+      <button id="save"    class="inter-button">save</button>
+    </div>
+    
+
+    <!-- 22222222222222222222222 -->
+
+    <!-- <div class="background2">
+      <div class="shape2"></div>
+      <div class="shape2"></div>
+    </div> -->
+
+    <!-- <div class="background2">
+      <div class="shape2"></div>
+      <div class="shape2"></div>
+    </div> -->
+
+    
+          <!-- 22222222222222222222222 -->
+
+
+
+    <div class="wrapper">
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/8.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/9.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/7.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="view front-view">
+            <img src="assets/default.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="assets/5.png" alt="card-img">
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+    
+  </div>
+
+  <div class="containerScore">
+    <div class="conteinerPolygon">
+        <div class="polygon-shape   polygon1"></div>
+        <div class="polygon-shape   polygon2"></div>
+        <div class="polygon-shape   polygon3"></div>
+    </div>
+    <div class="cardScore">
+      <h1 class="titleScore">score <span id=""></span></h1>
+      <p class="ErrorScore">ERROR:   <span id="ErrorScore"></span></p>
+      <p class="TimeScore">TIME:     <span id="TimeScore"></span></p>
+        <button class="resetScore"></button>
+
+        <canvas class="fireworksCanvas" width="300" height="300"></canvas>
+<canvas class="fireworksCanvas fireworksCanvas2" width="300" height="300"></canvas>
+<canvas class="fireworksCanvas fireworksCanvas3" width="300" height="300"></canvas>
+<canvas class="fireworksCanvas fireworksCanvas4" width="300" height="300"></canvas>
+    </div>
+</div>
+
+
+
+    <script  src="script.js"></script>
+
+  </body>
+</html>
